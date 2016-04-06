@@ -1,0 +1,94 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    padding: 40px;
+    font-size: 14px; 
+}
+
+h1 { 
+    font-size: 32px;
+    padding: 0 0 0 10px;
+}
+
+h2 {
+    font-size: 18px;
+    padding: 10px 0 0 10px;
+}
+
+p.top {
+    font-size: 16px;
+    padding: 10px 0 0 10px;   
+}
+
+a {
+	color: #ff5c5b;
+}
+
+input {
+    width: 200px;
+    padding: 5px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.example {
+    margin: 20px; 
+    background: #fff;
+}
+
+.example.bordered {
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px; 
+}
+
+.example.bordered > .test1 {
+	display: inline-block;
+	width: 700px;
+	height: 300px;
+}
+
+.example.bordered > .test2 {
+	display: inline-block;
+	width: 700px;
+}
+
+.example.bordered > .test3 {
+    display: inline-block;
+    width: 500px;
+    height: 150px;
+}
+
+.example.bordered > .test4 {
+    display: inline-block;
+    width: 700px;
+    height: 150px;
+}
+
+.example.bg {
+    background: #f0f5f2;
+}
+
+.example h4 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.example p {
+    margin: 10px 0;
+}
+
+.footer {
+    width: 200px;
+    text-align: center;
+    margin: 100px auto 100px auto;
+}
+
+.footer > h5 > a {
+    color: #ff5c5b;
+}
+

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>ngAutocomplete - AngularJS Autocomplete</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="src/css/ngAutocomplete.css">
+</head>
+<body ng-controller="Ctrl as ctrl">
+
+<div>
+	<h2>
+		AngularJS ngAutocomplete
+	</h2>
+
+	<div class="example bordered">
+		<h4>Basic Example</h4>
+
+		<ng-autocomplete ng-model="ctrl.keyword1" url="data/example_data.json" max-results="5" theme="blue"></ng-autocomplete>
+	</div>
+
+	<div class="example bordered">
+		<h4>Advanced Example</h4>
+
+
+		<ng-autocomplete ng-model="ctrl.keyword"
+				 url="data/example_data.json"
+				 search-property="title"
+				 max-results="10"
+				 delay="300"
+				 min-length="2"
+				 allow-only-results="true"
+				 theme="red"
+				 placeholder="Išči ...">
+		</ng-autocomplete>
+	</div>
+
+</div>
+
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="src/js/ngAutocomplete.js"></script>
+<script type="text/javascript">
+var app = angular.module('app', ['jkuri.autocomplete']);
+app.controller('Ctrl', [function() {
+	
+}]);
+</script>
+
+
+
+</body>
+</html>
